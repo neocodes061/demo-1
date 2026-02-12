@@ -71,6 +71,14 @@
 }
 
 
+.section-title {
+  border-left: 4px solid #2563eb;
+  padding-left: 12px;
+  margin-bottom: 30px; /* space below heading */
+  font-size: 28px;
+}
+
+
 @media (max-width: 768px) {
 
   .btn {
