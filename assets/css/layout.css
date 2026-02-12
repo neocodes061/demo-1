@@ -106,7 +106,7 @@
   .hero {
     height: auto;
     min-height: 60vh;
-    margin-top: auto;
+    margin-top: 3.5rem;
   }
 
   .hero-overlay {
