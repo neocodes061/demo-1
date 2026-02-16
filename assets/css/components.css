@@ -34,13 +34,46 @@
 }
 
 
-.card {
-  padding: 1.5rem;
+.program-card {
   border: 1px solid #e5e7eb;
-  border-radius: 6px;
+  border-radius: 8px;
+  overflow: hidden;
   background: #fff;
-  text-align: center;
 }
+
+.program-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.program-content {
+  padding: 1rem;
+}
+
+.program-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.program-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.program-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.program-body {
+  margin-top: 0.75rem;
+}
+
 
 .stat {
   text-align: center;
@@ -107,4 +140,18 @@
   h2 {
     font-size: 1.5rem;
   }
+
+    .program-toggle {
+    display: inline-block;
+  }
+
+  .program-body {
+    display: none;
+  }
+
+  .program-card.active .program-body {
+    display: block;
+  }
+
 }
+
