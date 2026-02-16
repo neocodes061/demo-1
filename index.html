@@ -7,128 +7,280 @@
   <title>Coaching Center Name | City</title>
   <meta name="description" content="Coaching center in City offering quality education and proven results.">
 
-  <link rel="stylesheet" href="assets/css/base.css">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & Metadata -->
+    <title>Excellence Tuition Center | Math, Science & English Coaching</title>
+    <meta name="description" content="Top-rated tuition center providing personalized coaching in Math, Science, and English. Small batches, expert tutors, and proven results. Book a free trial today.">
+    <meta name="keywords" content="tuition center, math coaching, science tutor, english classes, exam preparation, small business coaching">
+    
+    <!-- JSON-LD Schema for Local Business/Education -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Excellence Tuition Center",
+      "image": "https://placehold.co/600x400",
+      "telephone": "+1-555-0123",
+      "url": "https://www.example-tuition.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Education Lane",
+        "addressLocality": "Knowledge City",
+        "postalCode": "10001",
+        "addressCountry": "US"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/layout.css">
   <link rel="stylesheet" href="assets/css/components.css">
+  
 </head>
-
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <h1 class="logo">BrightMinds Academy</h1>
-    <nav class="nav">
-      <a href="#courses">Courses</a>
-      <a href="#why-us">Why Us</a>
-      <a href="#results">Results</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+    <!-- Header -->
+    <header>
+        <div class="container header-inner">
+            <div class="logo">
+                <a href="#" style="font-size: 1.5rem; font-weight: 800; color: var(--primary-color);">
+                    Excellence<span style="color: var(--accent-color);">.</span>
+                </a>
+            </div>
+            
+            <button class="hamburger" aria-label="Toggle menu" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-<main>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#tutors">Tutors</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="cta-button" style="padding: 0.5rem 1rem;">Book Free Trial</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <section class="hero">
-    <div class="hero-overlay">
-      <h1>Kolkata’s Trusted Coaching Centre for Board Exams, JEE & NEET</h1>
-      <p>Focused preparation for CBSE, ICSE, JEE, and NEET exams.</p>
-      <p> </p>
-      <a href="#contact" class="btn btn-primary">Contact Us Now</a>
-    </div>
-  </section>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <h1>Unlock Your Child's Full Potential</h1>
+                <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem auto;">
+                    Professional coaching in Math, Science, and English for Grades 5-12. 
+                    Small batches, personalized attention, and proven results.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#contact" class="cta-button">Enroll Now</a>
+                    <a href="#subjects" class="cta-button secondary">View Courses</a>
+                </div>
+            </div>
+        </section>
 
-  <section>
-    <div class="container">
-      <h2 class="section-title">About us</h2>
-      <p>At BrightMinds Academy, we are dedicated to providing top-quality coaching for students in Kolkata. Our experienced faculty and proven teaching methods have helped hundreds of students achieve their academic goals. Whether you're preparing for board exams, JEE, or NEET, we offer comprehensive courses designed to ensure your success.</p>
-    </div>
-  </section>
+        <!-- Subjects Grid -->
+        <section id="subjects">
+            <div class="container">
+                <h2>Our Core Subjects</h2>
+                <div class="grid-3">
+                    <!-- Card 1 -->
+                    <div class="subject-card">
+                        <div class="icon-box">📐</div>
+                        <h3>Mathematics</h3>
+                        <p>Algebra, Geometry, and Calculus simplified. We build strong foundations for problem-solving.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="subject-card">
+                        <div class="icon-box">🧬</div>
+                        <h3>Science</h3>
+                        <p>Physics, Chemistry, and Biology taught with practical examples and visual aids.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="subject-card">
+                        <div class="icon-box">📚</div>
+                        <h3>English</h3>
+                        <p>Grammar, Literature, and Creative Writing. Improve communication and analytical skills.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <section id="courses">
-    <div class="container">
-      <h2 class="section-title">Our Courses</h2>
-      <div class="program-card">
-  <div class="program-image">
-    <img src="assets/images/cbse.jpg" alt="CBSE ICSE Tuition">
-  </div>
+        <!-- Tutors Section -->
+        <section id="tutors" style="background-color: var(--bg-light);">
+            <div class="container">
+                <h2>Meet Expert Tutors</h2>
+                <div class="grid-3">
+                    <!-- Tutor 1 -->
+                    <div class="tutor-card">
+                        <!-- Note: In production, change src to assets/images/tutor1.jpg -->
+                        <img src="https://placehold.co/400x300/e2e8f0/1e293b?text=Sarah+J." alt="Sarah Jenkins" class="tutor-img-placeholder">
+                        <div class="tutor-info">
+                            <span class="tutor-role">Mathematics Head</span>
+                            <h3>Sarah Jenkins</h3>
+                            <p>M.Sc Mathematics with 10 years of teaching experience. Specializes in simplified calculus.</p>
+                        </div>
+                    </div>
+                    <!-- Tutor 2 -->
+                    <div class="tutor-card">
+                        <img src="https://placehold.co/400x300/e2e8f0/1e293b?text=David+R." alt="David Ross" class="tutor-img-placeholder">
+                        <div class="tutor-info">
+                            <span class="tutor-role">Physics Expert</span>
+                            <h3>David Ross</h3>
+                            <p>B.Eng in Mechanical Engineering. Makes physics concepts come alive with real-world examples.</p>
+                        </div>
+                    </div>
+                    <!-- Tutor 3 -->
+                    <div class="tutor-card">
+                        <img src="https://placehold.co/400x300/e2e8f0/1e293b?text=Emily+W." alt="Emily Wong" class="tutor-img-placeholder">
+                        <div class="tutor-info">
+                            <span class="tutor-role">English Literature</span>
+                            <h3>Emily Wong</h3>
+                            <p>MA in English Literature. Passionate about helping students articulate their thoughts clearly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <div class="program-content">
-    <div class="program-header">
-      <h3>CBSE / ICSE Board Preparation</h3>
-      <button class="program-toggle" aria-label="Toggle details">
-        +
-      </button>
-    
+        <!-- Contact / Lead Gen Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Book Your Free Trial Class</h2>
+                <div class="contact-layout">
+                    <!-- Left: Contact Info -->
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">Why Choose Us?</h3>
+                        <ul style="margin-bottom: 2rem;">
+                            <li style="margin-bottom: 1rem;">✅ <strong>Small Batch Sizes:</strong> Max 8 students per class</li>
+                            <li style="margin-bottom: 1rem;">✅ <strong>Weekly Tests:</strong> Regular progress tracking</li>
+                            <li style="margin-bottom: 1rem;">✅ <strong>Expert Faculty:</strong> Certified and experienced</li>
+                        </ul>
+                        <div class="subject-card" style="text-align: left;">
+                            <h3>📍 Visit Us</h3>
+                            <p>123 Education Lane, Knowledge City</p>
+                            <p>Call: (555) 012-3456</p>
+                            <p>Email: hello@example-tuition.com</p>
+                        </div>
+                    </div>
 
-    <div class="program-body">
-      <p>
-        Comprehensive coaching for Classes 6–10 covering CBSE and ICSE
-        syllabus with regular tests, doubt sessions, and personal attention.
-      </p>
+                    <!-- Right: Form -->
+                    <form id="contactForm" style="background: white; padding: 2rem; border-radius: var(--card-radius); border: 1px solid var(--border-color);">
+                        <div class="form-group">
+                            <label class="form-label" for="parentName">Parent's Name</label>
+                            <input type="text" id="parentName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="subject">Interested Subject</label>
+                            <select id="subject" class="form-input">
+                                <option value="math">Mathematics</option>
+                                <option value="science">Science</option>
+                                <option value="english">English</option>
+                                <option value="all">All Subjects</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Request Call Back</button>
+                        
+                        <div id="formMessage" class="alert-box">
+                            Thanks! We have received your request and will call you shortly.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      <ul>
-        <li>Classes 6–10</li>
-        <li>Offline & Online Batches</li>
-        <li>Weekly Tests</li>
-      </ul>
-    </div>
-  </div>
-</div>
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <h3 style="color: white;">Excellence.</h3>
+                <p style="color: #cbd5e1;">Empowering students to achieve their academic goals through personalized coaching.</p>
+            </div>
+            <div>
+                <h4 style="color: white;">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#tutors">Meet Tutors</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: white;">Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; margin-top: 2rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1);">
+            <p style="font-size: 0.8rem; color: #94a3b8;">&copy; 2024 Excellence Tuition Center. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <!-- 
+    ========================================
+    FILE: script.js
+    (Mobile Menu, Form Handling)
+    ========================================
+    -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Mobile Menu Toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
 
-    </div>
-  </section>
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
 
-  <section id="why-us">
-    <div class="container">
-      <h2 class="section-title">Why Choose Us</h2>
-      <div class="grid grid-3">
-        <div class="card">Experienced Faculty</div>
-        <div class="card">Proven Results</div>
-        <div class="card">Personal Attention</div>
-      </div>
-    </div>
-  </section>
+            // Close menu when clicking a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                });
+            });
 
-<section id="results">
-  <div class="container">
-    <h2 class="section-title">Results That Speak</h2>
+            // 2. Contact Form Handling
+            const contactForm = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
 
-    <div class="stats-scroll">
-      <div class="stat-card">
-        <h3>500+</h3>
-        <p>Students Trained</p>
-      </div>
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Stop actual submission for demo
+                
+                // Simulate sending data...
+                const btn = contactForm.querySelector('button');
+                const originalText = btn.innerText;
+                btn.innerText = 'Sending...';
+                btn.disabled = true;
 
-      <div class="stat-card">
-        <h3>90%</h3>
-        <p>Success Rate</p>
-      </div>
-
-      <div class="stat-card">
-        <h3>10+</h3>
-        <p>Years Experience</p>
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
-
- <section id="contact" class="cta">
-    <div class="container">
-      <h2>Ready to Enroll?</h2>
-      <a class="btn btn-secondary" href="#">Contact Us</a>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="container">
-    <p>City, India | Phone: +91XXXXXXXXXX</p>
-  </div>
-</footer>
-
+                setTimeout(() => {
+                    formMessage.style.display = 'block';
+                    contactForm.reset();
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                }, 1000);
+            });
+        });
+    </script>
 </body>
 </html>
