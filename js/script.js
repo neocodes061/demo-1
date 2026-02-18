@@ -15,7 +15,15 @@
                 });
             });
 
-            // 2. Contact Form Handling
+            // 2. Phone Number Input - Allow only numbers, spaces, hyphens, +, (), etc.
+            const phoneInput = document.getElementById('phone');
+            phoneInput.addEventListener('input', (e) => {
+                // Only allow digits, spaces, hyphens, plus, parentheses
+                const validChars = /[^0-9\s\-\+\(\)]/g;
+                e.target.value = e.target.value.replace(validChars, '');
+            });
+
+            // 3. Contact Form Handling
             const contactForm = document.getElementById('contactForm');
             const formMessage = document.getElementById('formMessage');
 
